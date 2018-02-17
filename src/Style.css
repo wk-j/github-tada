@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'NewRocker';
   src: url('fonts/CarterOne.ttf') format('truetype');
-  /* src: url('fonts/NewRocker-Regular.ttf') format('truetype'); */
 }
 html, body { 
     height:  100%;
@@ -16,4 +15,8 @@ textarea {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+html {
+            user-select: none; /* Non-prefixed version, currently*/
 }
