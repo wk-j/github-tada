@@ -1,16 +1,13 @@
 import { EventEmitter } from "events";
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-// tslint:disable-next-line:no-unused-expression
 import "./Style.css"
-// tslint:disable-next-line:max-line-length
+
 const line = "🎨⚡🔥🐛🚑✨📝🚀💄🎉✅🔒🍎🐧🏁🤖🍏🔖🚨🚧💚⬇⬆📌👷📈♻➖🐳➕🔧🌐✏💩⏪🔀📦👽🚚📄💥🍱👌♿💡🍻💬🗃🔊🔇👥🚸🏗📱🤡"
 const mojis = Array.from(line)
 
-mojis.forEach(x => console.log(x))
-
 type State = {
-    hover: ""
+    hover: string
 }
 
 class App extends React.Component<{}, State> {
@@ -54,10 +51,13 @@ class App extends React.Component<{}, State> {
                 fontSize: "25px",
                 width: "100%",
                 fontFamily: "NewRocker",
-                // color: "Fuchsia",
+                // fontFamily: "Iosevka",
+                // fontFamily: "Herculanum Regular",
+                // color: "PURPLE",
+                color: "Fuchsia",
                 border: "1px solid grey",
                 boxSizing: "border-box",
-                textShadow: "2px 2px 4px #000000"
+                textShadow: "1px 1px 1px grey"
             }} />
         </div>
 

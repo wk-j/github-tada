@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'NewRocker';
-  src: url('fonts/NewRocker-Regular.ttf') format('truetype');
+  src: url('fonts/CarterOne.ttf') format('truetype');
+  /* src: url('fonts/NewRocker-Regular.ttf') format('truetype'); */
 }
 html, body { 
-    font-family: "NewRocker";
     height:  100%;
     overflow: hidden;
 }
