@@ -11,3 +11,5 @@ tools
 
 .paket
 builds
+
+.gh-release.json
