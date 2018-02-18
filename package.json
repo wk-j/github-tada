@@ -2,9 +2,11 @@
   "name": "git-tada",
   "version": "1.0.0",
   "description": "",
+  "productName": "GitHub Tada",
   "main": "dist/program.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mac-package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=images/logo.icns --prune=true --out=builds --ignore=scripts --ignore tslint.json --ignore=src --ignore=example --ignore=\\.vscode  --ignore=\\.paket --ignore=webpack.config.js  --ignore=\\.installer-ignore  --ignore=example --ignore=images --ignore=README.md --ignore=release* --ignore=\\.gitignore --ignore=\\.paket-files --ignore=\\.vscode --ignore=\\.src --ignore=electron-builder.yml --ignore=node_modules --ignore=tsconfig.json --ignore=package-lock.json",
+    "mac-dmg": "electron-installer-dmg ./builds/GitHub\\ Tada-darwin-x64/GitHub\\ Tada.app \"GitHub Tada\" --overwrite --icon=images/logo.icns --out=builds"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,10 @@
     "copy-webpack-plugin": "^4.4.1",
     "css-loader": "^0.28.9",
     "electron": "^1.8.2",
+    "electron-installer-dmg": "^0.2.1",
+    "electron-packager": "^11.0.1",
     "file-loader": "^1.1.6",
+    "npm": "^5.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "source-map-loader": "^0.2.3",
