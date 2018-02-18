@@ -1,6 +1,7 @@
-var electron = require("electron");
-var path = require("path");
-var url = require("url");
+var electron = require("electron")
+var path = require("path")
+var url = require("url")
+const { ipcMain } = require("electron")
 
 import { remote } from "electron";
 
@@ -21,14 +22,21 @@ function createWindow() {
         win = null;
     });
 }
+
 electron.app.on("ready", createWindow);
+
 electron.app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
         electron.app.quit();
     }
 });
+
 electron.app.on("activate", () => {
     if (win === null) {
         createWindow();
     }
+});
+
+ipcMain.on("cancel", () => {
+    electron.app.exit(0);
 });

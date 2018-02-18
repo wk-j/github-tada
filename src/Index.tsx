@@ -3,9 +3,6 @@ import * as React from "react"
 import * as ReactDOM from "react-dom"
 import "./Style.css"
 
-// tslint:disable-next-line:no-var-requires
-import { app } from "electron"
-
 const line = "🎨⚡🔥🐛🚑✨📝🚀💄🎉✅🔒🍎🐧🏁🤖🍏🔖🚨🚧💚⬇⬆📌👷📈♻➖🐳➕🔧🌐✏💩⏪🔀📦👽🚚📄💥🍱👌♿💡🍻💬🗃🔊🔇👥🚸🏗📱🤡"
 const mojis = Array.from(line)
 
@@ -33,7 +30,10 @@ class App extends React.Component<{}, State> {
         input.value = item + " " + input.value
         input.select()
         document.execCommand("Copy")
-        // window.close()
+
+        const { ipcRenderer } = require("electron")
+        console.log(ipcRenderer)
+        ipcRenderer.send("cancel")
     }
 
     private Moji = ({ item }: { item: string }) =>
