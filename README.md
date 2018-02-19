@@ -12,9 +12,13 @@ Emoji Editor
 
 ## Usage
 
-- Press `Control + Command +  C`
-- Type `@38 Hello, world!"`, Press `Alt + Enter`
+- Press `Control + Command +  C` to launch application
+- Type `@38 Hello, world!"`, Press `Alt + Enter` to exit
 - Press `Command + V` to paste text
+
+## Result
+
+🐳 Hello, world!
 
 ## Development
 
