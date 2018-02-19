@@ -2,10 +2,8 @@
 
 ## Installation
 
-- Double click `.dmg` installer
-- Move to Applications
-- Add `Launch Application` in Automator Service
-- Select `GitHub Tada`
+- Double click `GitHub Tada.dmg` installer, move `GitHub Tada` to Applications
+- Create Automator service, add `Launch Application`, select `GitHub Tada`
 - Define keyboard shortcut for invoke `GitHub Tada`, open `System Preferences > Keyboard > Shortcuts` set `Control + Command + C`
 
 ## Usage
@@ -21,7 +19,7 @@ webpack --watch
 eletron .
 ```
 
-## Create Installer
+## Create installer
 
 ```bash
 bash release-mac.sh
