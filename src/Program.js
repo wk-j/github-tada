@@ -8,8 +8,8 @@ import { remote } from "electron";
 let win;
 function createWindow() {
     win = new electron.BrowserWindow({
-        width: 600,
-        height: 300,
+        width: 700,
+        height: 500,
         titleBarStyle: "default"
     });
 
