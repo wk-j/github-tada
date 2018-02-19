@@ -1,15 +1,20 @@
 ## GitHub Tada
 
+Emoji Editor
+
+![](images/screen.png)
+
 ## Installation
 
-- Double click `GitHub Tada.dmg` installer, move `GitHub Tada` to Applications
+- Double click `GitHub Tada.dmg`, move `GitHub Tada` to Applications
 - Create Automator service, add `Launch Application`, select `GitHub Tada`
 - Define keyboard shortcut for invoke `GitHub Tada`, open `System Preferences > Keyboard > Shortcuts` set `Control + Command + C`
 
 ## Usage
 
 - Press `Control + Command +  C`
-- Press `Command + V`
+- Type `@38 Hello, world!"`, Press `Alt + Enter`
+- Press `Command + V` to paste text
 
 ## Development
 
